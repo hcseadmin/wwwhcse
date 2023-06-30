@@ -151,3 +151,22 @@ footer {
     color: white; 
 
 } 
+.certifications {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* change 200px to your preferred minimum image width */
+    grid-gap: 20px; /* adjust this value to increase/decrease the spacing between images */
+    justify-items: center; /* centers the content of the grid cells */
+    padding: 20px;
+}
+
+.certifications li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.certifications img {
+    max-width: 100%; /* ensures images are never wider than their container */
+    height: auto; /* maintains the image's aspect ratio */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* optional: adds a subtle shadow around images */
+}
