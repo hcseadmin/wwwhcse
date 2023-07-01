@@ -95,3 +95,37 @@ footer {
     background: #333; 
     color: white; 
 }
+
+#contact {
+    margin: 2em 0;
+}
+
+#contact form {
+    display: grid;
+    grid-gap: 1em;
+    margin-top: 1em;
+}
+
+#contact label {
+    font-weight: bold;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+}
+
+#contact input[type="submit"] {
+    padding: 0.5em 2em;
+    border: none;
+    background: #333;
+    color: white;
+    cursor: pointer;
+}
+
+#contact input[type="submit"]:hover {
+    background: #444;
+}
