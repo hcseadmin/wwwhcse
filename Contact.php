@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
     $message = trim($_POST["message"]);
 
-    $recipient = "your_email@example.com";
+    $recipient = "hcse_admin@hortoncse.net";
 
     $subject = "New contact from $name";
 
