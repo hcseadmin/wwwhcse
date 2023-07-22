@@ -2,18 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>"your title here</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Horton Cyber-Systems Engineering</title>
   </head>
   
   <body>
-     <header> 
+    <header> 
         <h1>Guarding Tomorrow, Today: Horton Cyber-Systems Engineering</h1> 
     </header> 
+
     <nav> 
         <a href="#home">Home</a> | 
         <a href="./about.html">About</a> 
     </nav> 
-   <section id="about"> 
+
+    <section id="about"> 
         <h2>Welcome to HCSE</h2> 
         <p> 
             Welcome to Horton Cyber-Systems Engineering - Guarding Tomorrow, Today. Whether you're an established 
@@ -21,18 +25,31 @@
             of experience in cybersecurity, systems administration, and network support, our skilled team is here to 
             empower your business. [Rest of the intro text...] 
         </p> 
+
         <h2>Mission and Vision</h2> 
         <p>Bringing simplicity to complex systems and security.</p> 
+
         <h2>Experience</h2> 
         <p>Highlight your 12 years of experience in government contracting and cybersecurity. Share your expertise in 
             RMF, STIGs, SCAP, ACAS, and SIEM tools, especially Splunk. 
         </p> 
-        
-        <section id="contact">
-    <h2>Contact Us</h2>
+    </section>
     
-</section>
-    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="contact.php" method="post">
+            <label for="name">Your Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Your Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="question">Your Question:</label><br>
+            <textarea id="question" name="question" rows="4" required></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer> 
+        <p>© 2023 Horton Cyber-Systems Engineering</p> 
+    </footer> 
   </body>
-  
 </html>
